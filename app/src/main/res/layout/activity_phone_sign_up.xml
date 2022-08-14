@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/bgColour"
+    android:foregroundTint="@color/bgColour"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/createAnAccount"
+        android:layout_width="233dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="63dp"
+        android:fontFamily="@font/gilory_black"
+        android:text="Start with Phone Number"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameEmail"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="182dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="#1D1D1D"
+        android:drawableLeft="@drawable/ic_phone_icon_grey"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:fontFamily="@font/gilory_medium"
+        android:hint="Phone Number"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp"
+        android:textColorHint="#676767"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/password"-->
+    <!--        android:layout_width="325dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        android:layout_marginStart="29dp"-->
+    <!--        android:layout_marginTop="268dp"-->
+    <!--        android:background="@drawable/input_bg"-->
+    <!--        android:backgroundTint="#1D1D1D"-->
+    <!--        android:drawableLeft="@drawable/pass_icon"-->
+    <!--        android:drawableRight="@drawable/eye_icon"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:fontFamily="@font/gilory_medium"-->
+    <!--        android:hint="Password"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:paddingLeft="10dp"-->
+    <!--        android:paddingRight="15dp"-->
+    <!--        android:textColorHint="#676767"-->
+    <!--        android:textCursorDrawable="@drawable/color_cursor"-->
+    <!--        android:textSize="14sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:passwordToggleEnabled="true"-->
+    <!--        tools:ignore="SpeakableTextPresentCheck" />-->
+
+
+    <ImageButton
+        android:id="@+id/next_button_signin_page"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="496dp"
+        android:background="@drawable/next_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/next_button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/registerBigText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/gilory_bold"
+        android:text="Send OTP"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phoneNumberTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="244dp"
+        android:fontFamily="@font/gilory_regular"
+        android:text="Do not enter the country code"
+        android:textColor="@color/hintColor"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:background="@drawable/getotp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

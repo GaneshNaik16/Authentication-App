@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColour"
+    android:foregroundTint="@color/bgColour"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/createAnAccount"
+        android:layout_width="183dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/gilory_black"
+        android:text="Dashboard"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/ic_back_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_back_btn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/password"-->
+    <!--        android:layout_width="325dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        android:layout_marginStart="29dp"-->
+    <!--        android:layout_marginTop="268dp"-->
+    <!--        android:background="@drawable/input_bg"-->
+    <!--        android:backgroundTint="#1D1D1D"-->
+    <!--        android:drawableLeft="@drawable/pass_icon"-->
+    <!--        android:drawableRight="@drawable/eye_icon"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:fontFamily="@font/gilory_medium"-->
+    <!--        android:hint="Password"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:paddingLeft="10dp"-->
+    <!--        android:paddingRight="15dp"-->
+    <!--        android:textColorHint="#676767"-->
+    <!--        android:textCursorDrawable="@drawable/color_cursor"-->
+    <!--        android:textSize="14sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:passwordToggleEnabled="true"-->
+    <!--        tools:ignore="SpeakableTextPresentCheck" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

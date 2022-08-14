@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColour"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/createAnAccount"
+        android:layout_width="198dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="63dp"
+        android:fontFamily="@font/gilory_black"
+        android:text="Create an account"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameEmail"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="182dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/user_icon"
+        android:drawablePadding="3dp"
+        android:ems="10"
+        android:fontFamily="@font/gilory_medium"
+        android:hint="Username or Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="#676767"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/password"-->
+    <!--        android:layout_width="325dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        android:layout_marginStart="29dp"-->
+    <!--        android:layout_marginTop="268dp"-->
+    <!--        android:background="@drawable/input_bg"-->
+    <!--        android:backgroundTint="#1D1D1D"-->
+    <!--        android:drawableLeft="@drawable/pass_icon"-->
+    <!--        android:drawableRight="@drawable/eye_icon"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:fontFamily="@font/gilory_medium"-->
+    <!--        android:hint="Password"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:paddingLeft="10dp"-->
+    <!--        android:paddingRight="15dp"-->
+    <!--        android:textColorHint="#676767"-->
+    <!--        android:textCursorDrawable="@drawable/color_cursor"-->
+    <!--        android:textSize="14sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:passwordToggleEnabled="true"-->
+    <!--        tools:ignore="SpeakableTextPresentCheck" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/bgColour"
+        android:textColorHint="@color/hintColor"
+        app:boxBackgroundColor="@color/bgColour"
+        app:boxStrokeColor="@color/hintColor"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconTint="@color/hintColor"
+        app:errorTextColor="@color/hintColor"
+        app:hintTextColor="@color/hintColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleDrawable="@drawable/password_toggle_drawable"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/hintColor"
+        app:startIconDrawable="@drawable/pass_icon"
+        app:startIconTint="@color/hintColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:fontFamily="@font/gilory_medium"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPassword"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="354dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/bgColour"
+        android:textColorHint="@color/hintColor"
+        app:boxBackgroundColor="@color/bgColour"
+        app:boxStrokeColor="@color/hintColor"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconTint="@color/hintColor"
+        app:errorTextColor="@color/hintColor"
+        app:hintTextColor="@color/hintColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleDrawable="@drawable/password_toggle_drawable"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/hintColor"
+        app:startIconDrawable="@drawable/pass_icon"
+        app:startIconTint="@color/hintColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:fontFamily="@font/gilory_medium"
+            android:hint="Confirm Password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/next_button_register_page"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="496dp"
+        android:background="@drawable/next_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/next_button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="254dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="428dp"
+        android:clickable="true"
+        android:fontFamily="@font/gilory_regular"
+        android:text="By clicking the Register button, you agree to the public offer"
+        android:textColor="@color/hintColor"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+    <TextView
+        android:id="@+id/registerBigText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/gilory_bold"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signUpWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="591dp"
+        android:fontFamily="@font/gilory_regular"
+        android:text="sign up with"
+        android:textColor="@color/hintColor"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signIn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="710dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:fontFamily="@font/gilory_regular"
+        android:text="Already have an account?"
+        android:textColor="@color/hintColor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/google_registerPage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="619dp"
+        android:background="@drawable/google_logo"
+        android:backgroundTint="@color/bgColour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/google_logo" />
+
+    <ImageButton
+        android:id="@+id/phoneRegister"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="619dp"
+        android:background="@drawable/phone_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phone_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="251dp"
+        android:layout_marginTop="619dp"
+        android:background="@drawable/fb_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fb_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
